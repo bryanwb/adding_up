@@ -306,8 +306,7 @@ k.ready(function() {
     var congrats = function () {
 	var congratsText;
 	stopGame();
-	$('#overlay').show();
-	$('#overlayPaper').show();
+
 	$('#overlay').css({"position": "absolute", "background": "white", "opacity": "0.7",
 			   "width": 800, "height": 600, "z-index": 10});
 	$('#overlayPaper').css({"position": "absolute", "z-index": "100", "opacity": 1});
@@ -325,7 +324,15 @@ k.ready(function() {
 
     };
 						      
+    document.getElementById('start').
+    addEventListener('click', startGame, false);
 
+
+    document.getElementById('stop').
+    addEventListener('click', stopGame, true);
+    
+    document.getElementById('reset').
+    addEventListener('click', resetGame, false);
    
 
     //set up the timer
@@ -345,37 +352,7 @@ k.ready(function() {
     sadChimpImage.hide();
 
     
-	$('#linkBackLesson').click(function(){
-		gotoMainStage();
-	});
-	controlButtonDisplay('linkPlayAgain','disabled');
-	$('#linkStart').click(function(){
-		controlButtonDisplay('linkStart','disabled');
-		controlButtonDisplay('linkPlayAgain','enabled');
-		if(flag_start === 0){		   
-			startGame();
-		}
-		flag_start = 1;
-		
-	});
 
-	$('#linkPlayAgain').click(function(){		
-		if(flag_start === 1){
-			$('#overlay').hide();
-			$('#overlayPaper').hide();
-			totalCorrect = 0, n0 = 0, n1 = 0, correctCard = 0,
-			 level = 0, score = 0, numCorrectAnswers = 0;
-			startGame();
-		}
-	});
-
-
-	$('#linkHelp').click(function(){
-		$('#help').slideDown(2000);
-	})
-	.mouseout(function(){
-		$('#help').slideUp(2000);
-	});
 
 });
 
