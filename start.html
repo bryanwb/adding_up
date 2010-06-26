@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Start Page for My Maths Adding Upto 10</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link type="image/ico" rel="icon" href="../../assets/image/favicon.ico" />
+  <link type="text/css" rel="stylesheet" href="../../css/kStart.css" />
+  <script type="text/javascript" src="../../js/jquery-1.4.js"></script>
+  <script type="text/javascript" src="../../js/karma.js"></script>
+  <script type="text/javascript" src="../../js/global.js"></script>
+
+
+</head>
+<body id="kStart">
+    <div id="top">
+	<div id='backBtn' title="Back"></div>
+      </a>
+      <div id="topMiddle">
+	<div id="topDesc" class="center">साझा शिक्षा ई-पाटीद्वारा निर्मित</div>
+	<div id="topE-Paath" class="center">ई-पाठ</div>
+      </div>
+    </div>
+    
+    <div id="middle">
+
+     	<div id="grade" class="center">
+	  <span id="gradeText">कक्षा:</span><span id="gradeNum">२</span>
+	</div>
+	<div id="subject" class="center">गणित</div>
+	<div id="lessonTitle" class="center">
+	  <a href="./index.html">Maths Adding Up to 10</ti</a>
+	</div>
+	<div id="lessonDesc" class="center">
+		दससम्मको जोड गर्न सिकाउने क्रियाकलाप
+	</div>
+	
+	<div id="teachersNoteBtn" class="button">
+			<a href="./kDoc.html?back=start.html&doc=teachersNote">
+				<div> Teacher's Note</div>
+				<div>पाठविवरण</div>
+			</a>
+	</div>
+    </div>
+    <div id="bottom">
+      <div title="साझा शिक्षा ई-पाटी द्वारा निर्मित" id="logo"></div>
+     
+    </div>
+	<div id="logoHelp"></div>
+  <script type="text/javascript">
+    //Karma.scaleToViewport();
+	$('#backBtn').click(function(){
+		gotoMainStage();
+	});
+	$('#logo').bind({
+		click: function(){
+			$('#logoHelp').toggle();
+		}
+		
+	});
+	
+  </script>
+</body>
+</html>

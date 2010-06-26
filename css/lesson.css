@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+#content{
+	position:relative;
+	margin: 0 auto;
+	margin-top: 74px;
+	width: 1198px;
+	height: 750px;
+	text-align:center;
+	overflow:hidden;
+}
+#help{
+	display:none;
+	position:absolute;
+	right: 60px;
+	top: 75px;;
+	width: 297px;
+	height: 697px;
+	background:url(../assets/image/help.png);
+	z-index:240;
+}
+
+#karma-main {
+position:absolute;
+top:0;
+left:0;
+width:800px;
+height:600px;
+
+}
+
+#main {
+float:left;
+position:relative;
+margin: 50px 0 0 100px;
+width: 650px;
+height: 600px;
+
+}
+#side {
+margin-top:50px;
+margin-left:50px;
+background-image: url(../assets/generic/images/sidebar.png);
+background:none none repeat scroll 0 0;
+float:left;
+height:600px;
+position:relative;
+width:150px;
+}
+
+#top {
+width: 650px;
+height: 300px;
+position:relative;
+}
+
+#bottom {
+clear:both;
+float:left;
+width: 650px;
+height: 300px;
+position:relative;
+}
+#topLeftArea {
+float:left;
+width: 300px;
+height: 300px;
+position:relative;
+}
+#topMiddleArea {
+background:none none repeat scroll 0 0;
+float:left;
+width: 50px;
+height: 300px;
+position:relative;
+}
+#topRightArea {
+float:left;
+width: 300px;
+height:300px;
+position:relative;
+}
+#topLeftCard {
+background:none none repeat scroll 0 0;
+width: 200px;
+height: 200px;
+left: 75px;
+position:absolute;
+top:50px;
+}
+
+#topLeftPaper {
+background:none none repeat scroll 0 0;
+position:absolute;
+top: 50px;
+left: 75px;
+width:200px; 
+height:200px;
+}
+
+#plusSign {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 150px;
+}
+#topRightCard {
+background: none none repeat scroll 0 0;
+width: 200px;
+height: 200px;
+position:absolute;
+right: 50px;
+top: 50px;
+}
+#topRightPaper {
+background:none none repeat scroll 0 0;
+position:absolute;
+left: 50px;
+right:50px;
+top:50px;
+width:200px;
+height:200px;
+}
+
+.bottom {
+background:none none repeat scroll 0 0;
+float:left;
+width: 216.5px;
+height: 300px;
+position:relative;
+}
+
+.bottomCard {
+    left:25px;
+    position:absolute;
+    width: 200px;
+    height: 200px;
+    top: 20px;
+}
+
+
+.sideItem {
+    clear:both;
+    float:left;
+    width:150px;
+    height: 200px;
+    position: relative;
+}
+
+#timer {
+position:absolute;
+width:100px;
+height:150px;
+top:10px;
+left:25px;
+}
+
+#timerPaper {
+position:absolute;
+width:100px;
+height:150px;
+top:10px;
+left:25px;
+}
+
+#scoreBox {
+position:absolute;
+width:100px;
+height:150px;
+top:10px;
+left:25px;
+z-index: 10;
+}
+
+#scoreBoxText {
+position:relative;
+top:60px;
+font: 65px Arial;
+color: #fff;
+text-align: center;
+z-index: 100;
+}
+
+
+#chimpPaper {
+position:absolute;
+top:10px;
+left:25px;
+width:120px; 
+height:125px;
+}
+
+#buttons {
+position:absolute;
+top:80%;
+}
+
